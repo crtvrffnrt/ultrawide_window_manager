@@ -8,7 +8,6 @@ XMIND_WINDOW_ID=$(wmctrl -lx | grep -i "xmind.Xmind" | awk '{print $1}')
 # Check if the Firefox window was found
 if [ -z "$FIREFOX_WINDOW_ID" ]; then
     echo "No Firefox window found."
-    exit 1
 fi
 # Resize and move the terminal window to the right side of the screen
 if [ -n "$WINDOW_ID" ]; then
