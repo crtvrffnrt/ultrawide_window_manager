@@ -19,12 +19,13 @@ This script uses **wmctrl** to automatically resize and move windows like Firefo
    ```bash
    sudo apt install wmctrl
 ## Clone
-git clone https://github.com/yourusername/ultrawide-window-manager.git
-cd ultrawide-window-manager
-chmod +x ultrawide_window_manager.sh
+1. git clone https://github.com/yourusername/ultrawide-window-manager.git
+2. cd ultrawide-window-manager
+3. chmod +x ultrawide_window_manager.sh
 
 ## Run
 ./ultrawide_window_manager.sh
+
 ## Customization
 ### Adjusting Window Classes:
 
