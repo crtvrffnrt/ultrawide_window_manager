@@ -1,4 +1,8 @@
-#!/bin/bash
+	#!/bin/bash
+
+# Store the ID of the currently active window
+CURRENT_WINDOW_ID=$(xdotool getactivewindow)
+
 SCREEN_WIDTH=3840
 SCREEN_HEIGHT=1050
 # Find the window ID of the GNOME Terminal by class name
@@ -105,3 +109,9 @@ if [ -n "$VSCODE_ID" ]; then
 else
     echo "No VSCODE window found."
 fi
+# Restore focus to the originally active window
+if [ -n "$CURRENT_WINDOW_ID" ]; then
+    sleep 0.1
+    wmctrl -i -a "$CURRENT_WINDOW_ID"
+fi
+
