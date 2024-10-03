@@ -19,7 +19,7 @@ Remmina2_WINDOW_ID=$(wmctrl -lx | grep -i "remmina" | awk 'NR==3{print $1}')
 
 
 ## Right
-WINDOW_ID=$(wmctrl -lx | grep -i "gnome-terminal-server.Gnome-terminal" | awk '{print $1}')
+WINDOW_ID=$(wmctrl -lx | grep -i "Gnome-terminal" | awk '{print $1}')
 VSCODE_ID=$(wmctrl -lx | grep -i "Visual Studio Code" | awk '{print $1}')
 
 # Check if the Firefox window was found
